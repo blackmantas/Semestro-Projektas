@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,34 @@ Route::get('/testName', function () {
        'name' => request('name')
     ]);
 });
+
+//Route::get('/crud', function (){
+//    return view('inc/home');
+//});
+
+Route::get('/crud/create', function (){
+    return view('inc/create');
+});
+
+Route::get('/crud', 'UsersController@getUser');
+
+
+Route::get('/crud/locations', 'LocationsController@home');
+
+Route::post('/insert', 'UsersController@add');
+
+Route::get('/SemPro', function (){
+    return view('SemPro/home');
+})->name("sem.pro.home");
+
+Route::get('/SemPro/Filtered', function (){
+    $filtered = Session::get("filteredObjects");
+
+    return view('SemPro/FilteredObjects', ['filtered' => $filtered]);
+})->name("sem.pro.filtered");
+
+Route::post('/SemPro', 'SearchObjectsController@filteredSearch')->name('filtered.search');
+
 
 //{} in get('post/{post}') - {post} can be any number or string
 //Route::get('posts/{post}', function () {

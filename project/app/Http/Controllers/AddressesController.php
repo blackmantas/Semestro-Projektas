@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\SearchObject;
+use App\Address;
 
-class SearchObjectController extends Controller
+class AddressesController extends Controller
 {
     //
 }

@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Location;
+use App\Town;
 
-class LocationController extends Controller
+
+class TownsController extends Controller
 {
     //
 }
