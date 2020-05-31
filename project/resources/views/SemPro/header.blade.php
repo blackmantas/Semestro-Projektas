@@ -1,7 +1,7 @@
 <!DOCTYE html>
 <html>
 <head>
-    <title>Laravel CRUD application</title>
+    <title>Semestro Projektas</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
@@ -16,13 +16,13 @@
     <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/crud">Home</a>
+                <a class="nav-link" href="/SemPro">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/crud/create">Create</a>
+                <a class="nav-link" href="/crud/create">Create ad</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/crud/locations">Our Locations</a>
+                <a class="nav-link" href="/SemPro/locations">Our Locations</a>
             </li>
         </ul>
 

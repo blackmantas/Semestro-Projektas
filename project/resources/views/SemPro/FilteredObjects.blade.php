@@ -39,11 +39,6 @@
                 <td>{{ $object->Installation }}</td>
                 <td>{{ $object->Object_Type }}</td>
                 <td>{{ $object->Heating }}</td>
-<!--                <td>-->
-<!--                    <a href="" class="label">Read</a> |-->
-<!--                    <a href="" class="label">Update </a>|-->
-<!--                    <a href="" class="label">Delete</a>-->
-<!--                </td>-->
             </tr>
             @endforeach
             @endif

@@ -1,4 +1,4 @@
-@include('inc.header')
+@include('SemPro.header')
 <div class="container">
     <div class="row">
         <table class="table table-hover">
@@ -28,4 +28,4 @@
         </table>
     </div>
 </div>
-@include('inc.footer')
+@include('SemPro.footer')

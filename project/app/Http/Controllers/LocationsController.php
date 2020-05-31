@@ -12,6 +12,6 @@ class LocationsController extends Controller
         $locations = Location::all();
         //print_r(User::all());
         print_r(count($locations));
-        return view('inc.locationsHome', ['locations' => $locations]);
+        return view('SemPro.locationsHome', ['locations' => $locations]);
     }
 }
